@@ -1,9 +1,15 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Task2.Data.Models
 {
     public class User
     {
+        public User()
+        {
+            Bets = new HashSet<Bet>();
+        }
+
         [Key]
         public int UserId { get; set; }
 
@@ -19,5 +25,7 @@ namespace Task2.Data.Models
 
         [MaxLength(128)]
         public string Username { get; set; }
+
+        public virtual ICollection<Bet> Bets { get; set; }
     }
 }

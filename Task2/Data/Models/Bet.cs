@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Task2.Data.Models
 {
@@ -9,9 +10,17 @@ namespace Task2.Data.Models
         public int BetId { get; set; }
 
         public int Amount { get; set; }
+
+        [Required, ForeignKey(nameof(Game))]
         public int GameId { get; set; }
+
         public Prediction Prediction { get; set; }
         public DateTime DateTime { get; set; }
+
+        [ForeignKey(nameof(User))]
         public int UserId { get; set; }
+
+        public virtual Game Game { get; set; }
+        public virtual User User { get; set; }
     }
 }
