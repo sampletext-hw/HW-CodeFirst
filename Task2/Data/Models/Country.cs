@@ -7,6 +7,7 @@ namespace Task2.Data.Models
         [Key]
         public int CountryId { get; set; }
 
+        [MaxLength(64)]
         public string Name { get; set; }
     }
 }

@@ -10,7 +10,7 @@ namespace Task2.Data.Models
 
         public int Amount { get; set; }
         public int GameId { get; set; }
-        public int Prediction { get; set; }
+        public Prediction Prediction { get; set; }
         public DateTime DateTime { get; set; }
         public int UserId { get; set; }
     }
