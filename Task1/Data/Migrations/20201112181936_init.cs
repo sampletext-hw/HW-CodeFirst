@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace HW_CodeFirst.Data.Migrations
+namespace Task1.Data.Migrations
 {
     public partial class init : Migration
     {

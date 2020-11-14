@@ -1,4 +1,4 @@
-﻿namespace HW_CodeFirst.Data.Models
+﻿namespace Task1.Data.Models
 {
     public enum ContentType
     {

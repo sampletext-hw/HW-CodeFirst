@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace HW_CodeFirst.Data.Models
+namespace Task1.Data.Models
 {
     public class Resource
     {

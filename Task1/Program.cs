@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HW_CodeFirst
+namespace Task1
 {
     class Program
     {

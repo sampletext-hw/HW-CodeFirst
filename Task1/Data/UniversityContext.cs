@@ -1,7 +1,7 @@
-﻿using HW_CodeFirst.Data.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Task1.Data.Models;
 
-namespace HW_CodeFirst.Data
+namespace Task1.Data
 {
     public class UniversityContext : DbContext
     {
