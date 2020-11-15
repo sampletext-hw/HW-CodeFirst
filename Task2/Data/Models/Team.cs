@@ -19,7 +19,7 @@ namespace Task2.Data.Models
         public int Budget { get; set; }
         public string Initials { get; set; }
 
-        [MaxLength(int.MaxValue)]
+        [Column(TypeName = "varchar(max)")]
         public string LogoUrl { get; set; }
 
         [MaxLength(128)]
